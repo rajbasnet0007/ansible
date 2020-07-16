@@ -1,6 +1,13 @@
-- name: Hello World Sample
+- name: Update and upgrade apt packages
   hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+  become: true
+  apt:
+    upgrade: yes
+    update_cache: yes
+
+#- name: Hello World Sample
+#  hosts: all
+#  tasks:
+#    - name: Hello Message
+#      debug:
+#        msg: "Hello World!"
