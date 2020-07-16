@@ -1,9 +1,9 @@
 - name: Update and upgrade apt packages
   hosts: all
   become: true
-  apt:
-    upgrade: yes
-    update_cache: yes
+    apt:
+      upgrade: yes
+      update_cache: yes
 
 #- name: Hello World Sample
 #  hosts: all
