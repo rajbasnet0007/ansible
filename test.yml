@@ -1,14 +1,12 @@
 ---
 - hosts: all
-  environment:
-    
-
-  tasks:
+  environment: 
   sudo: yes
-
-
+  tasks:
   - name: Update APT package cache
     apt: update_cache=yes cache_valid_time=600
+
+
 
 #- name: Hello World Sample
 #  hosts: all
