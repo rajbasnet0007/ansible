@@ -5,12 +5,7 @@
   tasks:
   - name: Update APT package cache
     apt: update_cache=yes cache_valid_time=600
+  - name: Install nginx
+    apt: name=nginx state=present
 
 
-
-#- name: Hello World Sample
-#  hosts: all
-#  tasks:
-#    - name: Hello Message
-#      debug:
-#        msg: "Hello World!"
