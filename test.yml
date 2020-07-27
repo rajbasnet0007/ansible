@@ -7,5 +7,8 @@
     apt: update_cache=yes cache_valid_time=600
   - name: Install nginx
     apt: name=nginx state=present
-
-
+  task:
+    -name: copy file
+     copy:
+       src: 123.txt
+       dest: /tmp
