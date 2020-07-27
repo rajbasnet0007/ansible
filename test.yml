@@ -9,6 +9,6 @@
     apt: name=nginx state=present
   tasks:
   - name: copy file
-    copy:
+    copy: Copy file from source
        src: 123.txt
        dest: /tmp
