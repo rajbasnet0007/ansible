@@ -9,4 +9,4 @@
     apt: name=nginx state=present
   tasks:
   - name: copy file
-    copy: copy=/var/lib/awx/projects/_15__nginx_project/123.txt dest=/tmp
+    copy: src=/var/lib/awx/projects/_15__nginx_project/123.txt dest=/tmp
