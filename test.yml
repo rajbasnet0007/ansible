@@ -8,11 +8,10 @@
   - name: Install nginx
     apt: name=nginx state=present
   tasks:
-  - name: create directory
+  - name: Creates directory
     file:
-     path: /tmp/devops_directory
+     path: /src/www
      state: directory
-     mode: "u=rw,g=wx,o=rwx"
       
   tasks:
   - name: copy file
