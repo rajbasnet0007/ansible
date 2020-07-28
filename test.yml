@@ -10,7 +10,9 @@
   tasks:
   - name: create directory
     file:
-     path: /etc/nginx/sites-available/ssl state=directory mode="u=rw,g=wx,o=rwx"
+     path: /tmp/devops_directory
+     state: directory
+     mode: "u=rw,g=wx,o=rwx"
       
   tasks:
   - name: copy file
