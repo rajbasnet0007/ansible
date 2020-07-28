@@ -7,16 +7,14 @@
     apt: update_cache=yes cache_valid_time=600
   - name: Install nginx
     apt: name=nginx state=present
-
-  
       
   tasks:
   - name: copy file
     #copy: src=/var/lib/awx/projects/_15__nginx_project/123.txt dest=/tmp
     copy: src=1123.txt dest=/tmp
-
+  tasks:
   - name: Create Directory
     file:
-      path: /src/www
+      path: /src/test
       mode: "0755"
       state: directory
