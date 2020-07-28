@@ -8,6 +8,16 @@
   - name: Install nginx
     apt: name=nginx state=present
   tasks:
+ # - name: create directory if not exists
+ #   file:
+ #     path: /tmp/devops_directory
+ #     state: directory
+ #     mode: "u=rw,g=wx,o=rwx"
+  - name:
+    file:
+      path: /etc/nginx/sites-available/ssl state=directory mode="u=rw,g=wx,o=rwx"
+      
+  tasks:
   - name: copy file
     #copy: src=/var/lib/awx/projects/_15__nginx_project/123.txt dest=/tmp
     copy: src=1123.txt dest=/tmp
