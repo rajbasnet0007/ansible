@@ -20,7 +20,7 @@
       mode: "0755"
       state: directory
 
-- hosts: all
+
   tasks:
   - name: Create old Directory
     file:
@@ -28,7 +28,7 @@
       mode: "0755"
       state: directory
 
-- hosts: all
+
   become: yes
   tasks:
   - name: Create Latest directory
