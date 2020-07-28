@@ -9,10 +9,11 @@
     apt: name=nginx state=present
     
 - hosts: all
+  become: yes
   tasks:
   - name: Create NEW Directory
     file:
-      path: /src/free1
+      path: /src/free112
       mode: "0755"
       state: directory
 
