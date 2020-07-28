@@ -14,6 +14,12 @@
     #copy: src=/var/lib/awx/projects/_15__nginx_project/123.txt dest=/tmp
     copy: src=1123.txt dest=/tmp
 
+- hosts: all
+  become: true
+  tasks:
+  - name: Create Latest directory
+    file: path=/src/raj state=directory
+
   tasks:
   - name: Create NEW Directory
     file:
