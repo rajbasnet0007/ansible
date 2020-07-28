@@ -28,8 +28,6 @@
       mode: "0755"
       state: directory
 
-
-  become: yes
   tasks:
   - name: Create Latest directory
     file: path=/src/raj state=directory
