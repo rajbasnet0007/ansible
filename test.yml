@@ -22,3 +22,8 @@
       state: directory
   - name: Create Latest directory
     file: path=/src/raj state=directory
+  - name: Executing shell script
+    shell:
+       "./test.sh"
+  - name: Restart Nginx
+    apt: name=nginx start=restarted
