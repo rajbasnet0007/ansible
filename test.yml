@@ -25,4 +25,4 @@
   - name: Executing shell script
     script: test.sh
   - name: Restart Nginx
-    apt: name=nginx start=restarted
+    service: name=nginx state=restarted
