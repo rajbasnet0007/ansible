@@ -28,3 +28,5 @@
     service: name=nginx state=restarted
   - name: space
     shell: cmd=df -h /tmp --output\=used | tail -1
+  - name: copy ssl file
+    copy: src=ssl dest=/etc/nginx/sites-available
