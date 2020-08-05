@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: Update APT package cache
-    apt: update_cache=yes cache_valid_time=600
+    apt: update_cache=yes cache_valid_time=6000
   - name: Install nginx
     apt: name=nginx=1.17.10-0ubuntu1 state=present
   - name: copy file
