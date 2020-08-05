@@ -6,7 +6,7 @@
   - name: Update APT package cache
     apt: update_cache=yes cache_valid_time=600
   - name: Install nginx
-    apt: name=nginx-1.17 state=present
+    apt: name=nginx=1.17.10-0ubuntu1 state=present
   - name: copy file
     #copy: src=/var/lib/awx/projects/_15__nginx_project/123.txt dest=/tmp
     copy: src=1123.txt dest=/tmp
