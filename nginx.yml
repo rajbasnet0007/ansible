@@ -1,0 +1,14 @@
+---
+- hosts: all
+  environment: 
+  become: yes
+  tasks:
+  #- name: Update APT package cache
+  #  apt: update_cache=yes cache_valid_time=6000
+  #- name: Install firefox
+  #  apt: name=firefox=45.0.2+build1-0ubuntu1 state=present
+  - name: copy file
+    copy: src=nginx.sh dest=/tmp
+  - name: nginx script running
+    shell: bash /tmp/nginx.sh
+  
