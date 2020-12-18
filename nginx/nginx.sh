@@ -7,5 +7,4 @@ echo "<h1>Error - 500</h1>" | sudo tee /usr/share/nginx/html/custom_500.html
 echo "<h1>Error - 502</h1>" | sudo tee /usr/share/nginx/html/custom_502.html
 echo "<h1>Error - 503</h1>" | sudo tee /usr/share/nginx/html/custom_503.html
 echo "<h1>Error - 504</h1>" | sudo tee /usr/share/nginx/html/custom_504.html
-sudo systemctl start nginx
 sudo systemctl reload nginx
