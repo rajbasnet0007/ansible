@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo cp /etc/nginx/sites-available/default /root/default-$(date +%F-%T)
-sudo cp default /etc/nginx/sites-available/default
+sudo cp /tmp/nginx/default /etc/nginx/sites-available/default
 echo "<h1 style='color:red'>Error 403 Not Authorized </h1>" | sudo tee /usr/share/nginx/html/custom_403.html
 echo "<h1 style='color:red'>Error 404 Not found </h1>" | sudo tee /usr/share/nginx/html/custom_404.html
 echo "<h1>Error - 500</h1>" | sudo tee /usr/share/nginx/html/custom_500.html
