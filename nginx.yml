@@ -10,5 +10,5 @@
   - name: copy file
     copy: src=nginx dest=/tmp
   - name: nginx script running
-    shell: bash /tmp/nginx.sh
+    shell: bash /tmp/nginx/nginx.sh
   
