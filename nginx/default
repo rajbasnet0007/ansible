@@ -9,7 +9,7 @@ server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     #server_name url.searchunify.com;
-    ssl on;
+    #ssl on;
     ssl_certificate /usr/local/ssl/startCertificates/bundle.crt;
     ssl_certificate_key /usr/local/ssl/startCertificates/searchunify.key;
     ssl_session_timeout 1d;
