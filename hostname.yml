@@ -1,0 +1,9 @@
+---
+- hosts: all
+  environment: 
+  become: yes
+  tasks:
+  - name: nginx script running
+    shell: hostname > /tmp/test.txt
+  
+
