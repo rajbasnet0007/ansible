@@ -1,9 +1,0 @@
----
-- hosts: all
-  environment: 
-  become: yes
-  tasks:
-  - name: Update APT package cache
-    apt: update_cache=yes cache_valid_time=6000
-  - name: Upgrade all apt packages
-    apt: upgrade=dist force_apt_get=yes
