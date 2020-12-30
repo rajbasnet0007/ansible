@@ -3,7 +3,13 @@
   environment: 
   become: yes
   tasks:
+  - name: Image Pull
+    shell: docker stop nginx
+  - name: Image Remove
+    shell: docker rm nginx
+  - name: Image Pull
+    shell: docker pull chhotu/nginx:nginx1
   - name: nginx script running
-    shell: hostname > /tmp/test.txt
-  
+    shell: docker run -d --name nginx -p 80:80  chhotu/nginx:nginx1
+
 
